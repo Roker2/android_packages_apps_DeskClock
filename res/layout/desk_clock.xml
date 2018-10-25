@@ -28,7 +28,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@null"
+        android:background="@color/pager_tab_background_color"
         app:elevation="0dp">
 
         <androidx.appcompat.widget.Toolbar
@@ -36,18 +36,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:contentInsetStart="0dp"
+            app:theme="@style/Theme.DeskClock.OverflowButton"
             tools:ignore="RtlSymmetry">
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/pager_tab_background_color"
                 app:tabGravity="fill"
-                app:tabIndicatorColor="@android:color/transparent"
+                app:tabBackground="?selectableItemBackground"
+                app:tabSelectedTextColor="@color/pager_tab_text_color"
                 app:tabMaxWidth="0dp"
                 app:tabMode="fixed"
                 app:tabPaddingEnd="0dp"
-                app:tabPaddingStart="0dp" />
+                app:tabPaddingStart="0dp"
+                style="@style/Widget.GoogleMaterial.TabLayout" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -56,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/hairline_height"
             android:layout_gravity="bottom"
-            android:background="@color/hairline"
+            android:background="@null"
             android:importantForAccessibility="no" />
 
     </com.google.android.material.appbar.AppBarLayout>
