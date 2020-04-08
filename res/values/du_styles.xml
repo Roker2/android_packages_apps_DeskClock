@@ -29,7 +29,7 @@
         <item name="tabRippleColor">@color/pager_tab_ripple_color</item>
     </style>
 
-    <style name="TextAppearance.GoogleMaterial.Tab" parent="@style/TextAppearance.MaterialComponents.Tab">
+    <style name="TextAppearance.GoogleMaterial.Tab" parent="@style/TextAppearance.Design.Tab">
         <item name="android:textColor">@color/pager_tab_active_text_color</item>
         <item name="textAllCaps">false</item>
     </style>
