@@ -18,7 +18,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Google-ify -->
-    <style name="Widget.GoogleMaterial.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
+    <style name="Widget.GoogleMaterial.TabLayout" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
         <item name="android:background">@android:color/white</item>
         <item name="tabIndicatorColor">@color/pager_tab_indicator_color</item>
         <item name="tabIndicator">@drawable/google_tab</item>
